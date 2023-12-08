@@ -21,3 +21,8 @@ Here is the link for origin datasets
 <https://storage.googleapis.com/ads-dataset/subfolder-9.zip>  
 <https://storage.googleapis.com/ads-dataset/subfolder-10.zip>  
 <https://storage.googleapis.com/ads-dataset/resnet_negative.zip>
+
+
+To run the app:
+-Please download the files/folders inside the app folder. We have four files that cannot be uploaded to GitHub, so please download them from Google Drive<https://drive.google.com/drive/folders/19uL6q6G_il5wv2yRcLCm88DNGF-_MeR7?usp=sharing> and place these four files into the corresponding folders. 
+-Then, enter "python3 app.py" in the terminal.
