@@ -1,5 +1,12 @@
 # CSCI-567-project
 
+## How to reproduce the project
+- Download the datasets from the link at the end of Readme.  
+- Change the path in the jupyter notebook  
+- Change the hyper-parameters in the configuration part  
+- Train your own model!  
+
+
 Here is the link for origin datasets  
 <https://storage.googleapis.com/ads-dataset/subfolder-0.zip>  
 <https://storage.googleapis.com/ads-dataset/subfolder-1.zip>  
