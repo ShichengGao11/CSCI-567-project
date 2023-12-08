@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Prediction</title>
+    <style>
+        body {
+            background-color: #ffffff;
+            color: rgb(1, 1, 1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Ad or Not Ad</h1>
+    <div class="container">
+        <div class="left-section">
+            <h2>    </h2>
+            <h2>    </h2>
+            <h2>Upload picture to test if it's an ad</h2>
+            <p>Refine your browsing.Try our image recognition</p>
+            <p>tool to classify website images discreetly.</p>
+            <form method="POST" enctype="multipart/form-data">
+                <input type="file" name="file" accept="image/*" required>
+                <button type="submit">Predict</button>
+            </form>
+        </div>
+        <div class="right-section">
+            <img src="{{ url_for('static', filename='background/ad.png') }}" alt="Image">
+        </div>
+    </div>
+
+    <style>
+        h1 {
+            color: rgb(0, 0, 0); 
+            text-align: center;
+            padding: 10px;
+        }
+        form{
+            text-align: center;
+            margin: 20px;
+        }
+        button {
+            padding: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+        .container {
+            display: flex;
+            flex: 1;
+            padding: 20px;
+        }
+        .left-section,
+        .right-section {
+            width: 50%; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /*justify-content: center; 
+            margin-top: 50px; 
+        }
+        .left-section h2 {
+            font-size: 1.2em; 
+            font-style: italic; 
+            font-weight: normal; 
+        }
+        .left-section p {
+            font-size: 0.8em; 
+            font-style: italic; 
+            font-weight: normal; 
+            margin: 3px;
+        }
+        .right-section img {
+            max-width: 70%; 
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Topic Prediction Result</title>
+</head>
+<body>
+    <h1>Image Topic Prediction Result</h1>
+    <div class="container">
+        <div class="left-section">
+            <h2>Ads or Not: {{ predicted_ads }}</p>
+            <h2>Predicted Topic: {{ predicted_topic }}</p>
+            <h2>Sentiment: {{ predicted_sentiment }}</p>
+            <h2>Symbol: {{ predicted_symbol }}</p>
+        </div>
+        <div class="right-section">
+            <img src="{{ img_path }}" alt="Uploaded Image" style="max-width: 1600px;">
+        </div>
+    </div>
+
+    <style>
+        h1 {
+            color: rgb(0, 0, 0); 
+            text-align: center;
+            padding: 10px;
+        }
+        .container {
+            display: flex;
+            flex: 1; 
+            padding: 20px;
+        }
+        .left-section,
+        .right-section {
+            width: 50%; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px; 
+        }
+    </style>
+</body>
+</html>
