@@ -2,8 +2,9 @@
 
 ## How to reproduce the project
 - Download the datasets from the link at the end of Readme.  
-- Change the path in the jupyter notebook  
-- Change the hyper-parameters in the configuration part  
+- Change the path in the jupyter notebook.  
+- Change the hyper-parameters in the configuration part.
+- If you do not have wandb, you can ignore it, or you can add your key into the secret.
 - Train your own model!  
 
 
